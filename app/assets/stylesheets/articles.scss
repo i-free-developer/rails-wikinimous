@@ -1,0 +1,51 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  background-color: #eee;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.items {
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.tab {
+  display: flex;
+  height: 60px;
+  background-color: #ccc;
+  justify-content: space-between;
+}
+
+.tab > h3 {
+  padding: 0 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  justify-content: center;
+}
+
+.content{
+  min-height: 200px;
+  min-width: 400px;
+}

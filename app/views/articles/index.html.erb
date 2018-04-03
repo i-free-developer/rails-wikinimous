@@ -1,0 +1,26 @@
+ <div class="page">
+  <div class="tab">
+    <h3 class="tab-bar"><%= link_to "Wikinimous", articles_path %></h3>
+    <h3 class="tab-bar"><%= link_to "Create", new_article_path %></h3>
+  </div>
+
+  <div class="container">
+      <div class="article">
+        <% @articles.each do |article| %>
+          <h4><%= article.id %> <%= link_to article.title,article_path(article) %></h4>
+          <p><%= article.content %></p>
+            <%= link_to "Edit", edit_article_path(article) %>
+            <%= link_to "Delete", article_path(article), method: :delete, data: { comfirm: "Delete it, really?"} %>
+          <div class="inline">
+          </div>
+          <hr>
+        <% end %>
+      </div>
+  </div>
+
+  <div class="tab">
+    <h3 class="tab-bar"><%= link_to "Wikinimous", articles_path %></h3>
+    <h3 class="tab-bar"><%= link_to "Create", new_article_path %></h3>
+  </div>
+</div>
+
